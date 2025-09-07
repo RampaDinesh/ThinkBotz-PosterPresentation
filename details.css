@@ -55,21 +55,36 @@ h1, h2 {
     }
 
 .btn-register {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #4a00e0;
-      color: white;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: 0.3s;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  display: inline-block;
+  padding: 14px 30px;
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  animation: glow 2s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #8e2de2, 0 0 20px #8e2de2, 0 0 30px #4a00e0;
+  }
+  to {
+    box-shadow: 0 0 20px #4a00e0, 0 0 40px #8e2de2, 0 0 60px #4a00e0;
+  }
+}
+
+/* Hover Effect */
 .btn-register:hover {
-      background: black;
-    }
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
 .btn {
       background: blue;
       color: white;
@@ -97,3 +112,4 @@ h1, h2 {
          display:"none";
     }
 }
+
