@@ -1,0 +1,58 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4a00e0, #8e2de2);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 1px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .timer {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: white;
+      color: #4a00e0;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ffd700;
+      color: black;
+    }
+    

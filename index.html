@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Presentation 2025</title>
+  <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo (replace with your association logo) -->
+    <img src="/logo.png" alt="Association Logo" class="logo">
+
+    <!-- Event Name -->
+    <h1>Poster Presentation 2025</h1>
+    <p>"Showcase Your Ideas, Inspire the Future"</p>
+
+    <!-- Countdown Timer -->
+    <div class="timer" id="countdown">Loading...</div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn" onclick="window.location.href='register.html'">Register Now</button>
+      <button class="btn" onclick="window.location.href='details.html'">More Details</button>
+    </div>
+  </div>
+
+  <script>
+    // Countdown Timer Script
+    const countdown = document.getElementById("countdown");
+    const deadline = new Date("Dec 25, 2025 23:59:59").getTime();
+
+    const x = setInterval(function () {
+      const now = new Date().getTime();
+      const t = deadline - now;
+
+      if (t >= 0) {
+        const days = Math.floor(t / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((t % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+      } else {
+        countdown.innerHTML = "Registration Closed!";
+        clearInterval(x);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
