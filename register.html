@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Presentation 2025 - Registration</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #1a1a1a, #222);
+      box-shadow: 0 0 20px #8e2de2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #8e2de2;
+      margin-bottom: 20px;
+    }
+
+    /* Glowing button style if you add a custom submit button later */
+    .btn-glow {
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      box-shadow: 0 0 15px #8e2de2, 0 0 30px #4a00e0;
+      transition: 0.3s;
+      animation: glow 2s infinite alternate;
+      text-align: center;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px #8e2de2, 0 0 20px #4a00e0;
+      }
+      50% {
+        box-shadow: 0 0 20px #4a00e0, 0 0 40px #8e2de2;
+      }
+      100% {
+        box-shadow: 0 0 10px #8e2de2, 0 0 20px #4a00e0;
+      }
+    }
+
+    /* Make iframe responsive */
+    .iframe-wrapper {
+      position: relative;
+      padding-bottom: 140%; /* Adjust height */
+      height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #8e2de2;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Register for Poster Presentation 2025</h1>
+    <div class="iframe-wrapper">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdy9CEneQ06vRm4WzANEET4etNKVmQLGa_fdqMDmnwNxB2eHA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0" height="50" width="100%">Loading…</iframe>
+    </div>
+  </div>
+
+</body>
+</html>
