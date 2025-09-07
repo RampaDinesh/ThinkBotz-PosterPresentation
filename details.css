@@ -93,4 +93,7 @@ h1, h2 {
       .timeline, .rules, .eligibility, .prizes, .contact {
         flex-direction: column;
       }
+     .header{
+         display:"none";
     }
+}
