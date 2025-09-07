@@ -1,0 +1,96 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background:linear-gradient(135deg, #4a00e0, #8e2de2);
+      color: black;
+    }
+  .navbar {
+      background: #4a00e0;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .navbar a {
+      color: white;
+       text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+
+.container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+h1, h2 {
+      color: #4a00e0;
+    }
+
+    /* Sections */
+.section {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+.timeline, .rules, .eligibility, .prizes, .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+.btn-register {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #4a00e0;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.btn-register:hover {
+      background: black;
+    }
+.btn {
+      background: blue;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ffd700;
+      color: black;
+    }
+    /* Responsive */
+@media (max-width: 600px) {
+      .timeline, .rules, .eligibility, .prizes, .contact {
+        flex-direction: column;
+      }
+    }
